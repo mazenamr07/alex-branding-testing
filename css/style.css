@@ -391,6 +391,7 @@ div.gallery-photos .img.no-margin {
 }
 
 .section-client-feedback .container span.Alexander {
+  display: flexbox;
 }
 
 .section-client-feedback .container span {
