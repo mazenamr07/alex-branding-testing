@@ -5,10 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    <!-- Global Style -->
-    <link rel="stylesheet" href="css/style.css" />
-
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,21 +13,24 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-
+    
     <!-- Font Awesome -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
     />
-
+    
     <!-- Ico Font -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@icon/icofont@1.0.1-alpha.1/icofont.min.css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@icon/icofont@1.0.1-alpha.1/icofont.min.css"
     />
+
+    <!-- Global Style -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -44,8 +44,8 @@
               <td><a href="#home" id="home-tab">Home</a></td>
               <td><a href="#about">About</a></td>
               <td><a href="#services">Services</a></td>
-              <td><a href="">Portfolio</a></td>
-              <td><a href="">Testimonial</a></td>
+              <td><a href="#portfolio">Portfolio</a></td>
+              <td><a href="#feedback">Testimonial</a></td>
               <td><a href="">Blog</a></td>
               <td><a href="">Contact</a></td>
             </tr>
@@ -195,53 +195,141 @@
     <!-- 5- Major Counter Section -->
     <div class="section-major-counter" id="counter">
       <div class="mini-counter">
-        <i></i>
-        <span>21</span>
+        <i class="fa fa-users"></i>
+        <span class="number">21</span>
         <span>Team Members</span>
       </div>
       <div class="mini-counter">
-        <i></i>
-        <span>75</span>
+        <i class="fa-regular fa-file-code"></i>
+        <span class="number">75</span>
         <span>Complete Project</span>
       </div>
       <div class="mini-counter">
-        <i></i>
-        <span>196</span>
+        <i class="fa fa-cloud-download"></i>
+        <span class="number">196</span>
         <span>Files Downloaded</span>
       </div>
       <div class="mini-counter">
-        <i></i>
-        <span>1,698</span>
+        <i class="fa fa-coffee"></i>
+        <span class="number">1,698</span>
         <span>Lines Of Code</span>
       </div>
 
       <div class="clr"></div>
     </div>
 
-    <div class="section-client-feedback">
+    <!-- 6- Client Feedback Section -->
+    <div class="section-client-feedback" id="feedback">
       <h2 class="triple-underline">Client's Feedback</h2>
 
       <div class="container">
-        <div class="img">
-          <img src="images/feedback.jpg" alt="photo of Alexander Arnold" />
+        <div class="left">
+          <div class="img">
+            <img src="images/feedback.jpg" alt="photo of Alexander Arnold" />
+          </div>
         </div>
 
-        <span class="Alexander">Alexander Arnold</span>
-        <i></i>
-        <span>United Kingdom</span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          voluptates pariatur veniam beatae fugit aliquid praesentium vel quos!
-          Quis, accusamus! Odio incidunt officiis reiciendis vero?
-        </p>
+        <div class="right">
+          <span class="Alexander">Alexander Arnold</span>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>United Kingdom</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis voluptates pariatur veniam beatae fugit aliquid
+            praesentium vel quos! Quis, accusamus! Odio incidunt officiis
+            reiciendis vero?
+          </p>
 
-        <div class="rating">
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
         </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+
+    <!-- 7- Our Blog Section -->
+    <div class="section-our-blog" id="blog">
+      <h2 class="triple-underline">Our Blog</h2>
+
+      <div class="container">
+        <div class="blog">
+          <div class="img">
+            <a href="">
+              <img src="images/blog/12.jpg" alt="" />
+            </a>
+          </div>
+
+          <div class="text">
+            <span>23 November, 2015 </span>
+            <h3><a href="">web design Blog Post</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur ea, quis magnam deserunt eius incidunt repellat
+              molestiae.
+            </p>
+            <a href="">
+              <div class="read-more">
+                <span>READ MORE</span>
+                <i></i>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="blog">
+          <div class="img">
+            <a href="">
+              <img src="images/blog/12.jpg" alt="" />
+            </a>
+          </div>
+
+          <div class="text">
+            <span>23 November, 2015 </span>
+            <h3><a href="">web design Blog Post</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur ea, quis magnam deserunt eius incidunt repellat
+              molestiae.
+            </p>
+            <a href="">
+              <div class="read-more">
+                <span>READ MORE</span>
+                <i></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="blog">
+          <div class="img">
+            <a href="">
+              <img src="images/blog/12.jpg" alt="" />
+            </a>
+          </div>
+
+          <span>23 November, 2015 </span>
+          <h3><a href="">web design Blog Post</a></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consequuntur ea, quis magnam deserunt eius incidunt repellat
+            molestiae.
+          </p>
+          <a href="">
+            <div class="read-more">
+              <span>READ MORE</span>
+              <i></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="clr"></div>
       </div>
     </div>
   </body>

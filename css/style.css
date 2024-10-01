@@ -356,7 +356,7 @@ div.gallery-photos .img.no-margin {
 /* 5- Major Counter Section */
 .section-major-counter {
   background-color: #f1f1f1;
-  padding: 50px;
+  padding: 90px;
 }
 
 .section-major-counter .mini-counter {
@@ -365,36 +365,136 @@ div.gallery-photos .img.no-margin {
   text-align: center;
 }
 
+.mini-counter i {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: rgb(255, 48, 91);
+}
+
 .mini-counter span {
   display: block;
   padding: 5px 0;
 
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(85, 85, 85);
+}
+
+.mini-counter span.number {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 29px;
+  color: rgb(51, 51, 51);
 }
 
 /* 6- Client Feedback Section */
+.section-client-feedback {
+  padding: 50px 0 100px 0;
+}
+
 .section-client-feedback .container {
-  width: 60%;
+  width: 50%;
   margin: auto;
   padding: 50px;
   background-color: #f1f1f1;
 }
 
-.section-client-feedback .container .img {
-  width: 100px;
+.section-client-feedback .left {
+  width: 20%;
   float: left;
+}
+
+.section-client-feedback .right {
+  width: 80%;
+  float: right;
+}
+
+.section-client-feedback .left .img {
+  width: 110px;
   margin-right: 20px;
 }
 .section-client-feedback .img img {
-  border-radius: 50px;
+  border: 3px dashed rgb(255, 48, 91);
+  border-radius: 500px;
 }
 
-.section-client-feedback .container span.Alexander {
-  display: flexbox;
+.section-client-feedback .right span {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+
+  color: rgb(119, 119, 119);
+  font-size: 15px;
+  line-height: 17px;
 }
 
-.section-client-feedback .container span {
-  display: inline;
-  color: aquamarine;
+.section-client-feedback .right span.Alexander {
+  padding: 0;
+  color: rgb(51, 51, 51);
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.section-client-feedback .right .location {
+  padding: 15px 0;
+}
+
+.section-client-feedback .right i {
+  color: rgb(119, 119, 119);
+  font-size: 15px;
+}
+
+.section-client-feedback .right p {
+  color: rgb(85, 85, 85);
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  padding-bottom: 20px;
+}
+
+.right .rating i {
+  color: rgb(241, 195, 13);
+  font-size: 16px;
+}
+
+/* 7- Our Blog Section */
+.section-our-blog {
+  background-color: rgb(241, 241, 241);
+  padding: 50px 0;
+}
+
+.section-our-blog .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-our-blog .container .blog {
+  float: left;
+  width: 31%;
+  background-color: white;
+  /* margin-right: 5%; */
+}
+
+.blog .img {
+  width: 100%;
+}
+
+.blog .text {
+  padding: 20px;
+}
+
+.blog .text span {
+  font-family: "Roboto", sans-serif;
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.blog .text a {
+  text-decoration: none;
 }
