@@ -1,0 +1,389 @@
+/* -------------------------------------------------------------------------- */
+/*                               Medium Screens                               */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  h2.triple-underline {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  /* -------------------------- 1- Main Header Rules -------------------------- */
+  .section-main-header .header {
+    position: relative;
+    width: 700px;
+  }
+
+  .section-main-header .header i {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  ul.no-button {
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    top: -75%;
+    /* transform: translateY(-50%); */
+
+    text-align: center;
+    list-style: none;
+    margin: 12px auto;
+  }
+
+  ul.no-button li {
+    font-family: "Roboto", sans-serif;
+    padding: 12px 5px;
+    display: inline-block;
+  }
+
+  ul.no-button li a {
+    text-decoration: none;
+
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    transition: 400ms ease-in-out;
+  }
+  ul.no-button li a:hover {
+    color: rgb(255, 48, 91);
+  }
+
+  .section-main-header .main-body h1 {
+    color: rgb(255, 48, 91);
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 77px;
+
+    margin: 10px 0;
+  }
+
+  .section-main-header .main-body span {
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .section-main-header .main-body span.second {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  /* -------------------------- 2- Introduction Rules ------------------------- */
+  .section-introduction .container {
+    width: 725px;
+    padding-bottom: 20px;
+  }
+
+  .section-introduction .container .left {
+    width: 48%;
+    padding-right: 4%;
+    float: left;
+  }
+
+  .section-introduction .container .left .img .outer-layer {
+    height: 429px;
+  }
+
+  .section-introduction .container .right {
+    width: 48%;
+    padding: 0;
+    float: left;
+  }
+
+  .section-introduction .container .right ul {
+    width: 100%;
+  }
+
+  .section-introduction .container .right ul li {
+    float: left;
+    padding: 8px 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  li.first {
+    width: 40%;
+  }
+
+  .section-introduction .container .right a {
+    padding: 13px 22px;
+  }
+
+  /* -------------------------- 3- Our Services Rules ------------------------- */
+  .section-our-services .container {
+    width: 725px;
+  }
+  .section-our-services .container .mini-service {
+    float: left;
+    width: 50%;
+    padding: 30px 0;
+  }
+
+  /* ------------------------- 4- Our Portfolio Rules ------------------------- */
+  div.gallery-photos {
+    width: 725px;
+  }
+
+  div.gallery-photos .img.md-right {
+    float: right;
+  }
+
+  div.gallery-photos .img {
+    width: 48%;
+    float: left;
+    margin: 15px 0;
+  }
+
+  div.gallery-photos .img .layer {
+    height: 260px;
+  }
+
+  /* ------------------------- 5- Major Counter Rules ------------------------- */
+  .section-major-counter .container {
+    width: 725px;
+  }
+
+  .section-major-counter .mini-counter {
+    width: 25%;
+    float: left;
+  }
+
+  /* ------------------------ 6- Client Feedback Rules ------------------------ */
+  .section-client-feedback .container {
+    width: 650px;
+  }
+  .section-client-feedback .container::before {
+    top: -160px;
+    left: -90px;
+  }
+
+  .section-client-feedback .left {
+    float: left;
+    margin: 10px 0 0 0;
+    width: 20%;
+  }
+  .section-client-feedback .left .img {
+    width: 110px;
+  }
+
+  .section-client-feedback .right {
+    float: right;
+    width: 78%;
+  }
+
+  /* ---------------------------- 7- Our Blog Rules --------------------------- */
+  .section-our-blog .container {
+    width: 725px;
+    margin: 0 auto;
+  }
+
+  .section-our-blog .container .blog.md-lg-right {
+    margin-right: 0;
+  }
+
+  .section-our-blog .container .blog {
+    float: left;
+    width: 31%;
+    margin-right: 3.5%;
+    background-color: white;
+  }
+
+  .blog .text a {
+    text-decoration: none;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 21px;
+    color: black;
+  
+    transition: 400ms ease-in-out;
+  }
+
+  .blog .img iframe {
+    width: 100%;
+    height: 126px;
+  }
+
+  .blog .text {
+    padding: 15px;
+  }
+
+  /* --------------------------- 8- Contact Us Rules -------------------------- */
+  .section-contact-us {
+    padding: 40px 0;
+  }
+
+  .section-contact-us .container {
+    width: 725px;
+  }
+
+  .container form .md-middle {
+    width: 48%;
+  }
+  form .md-middle.second {
+    float: right;
+  }
+
+  /* --------------------------- 9- Footer Rules -------------------------- */
+  .section-footer {
+    padding: 60px 0;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Large Screens                               */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  /* -------------------------- 1- Main Header Rules -------------------------- */
+  .section-main-header .header {
+    width: 1150px;
+  }
+
+  ul.no-button li {
+    padding: 12px 10px;
+  }
+
+  /* -------------------------- 2- Introduction Rules ------------------------- */
+  .section-introduction .container {
+    width: 1150px;
+    padding: 40px 0 80px 0;
+  }
+
+  .section-introduction .container .left {
+    width: 40%;
+    margin-right: 5%;
+  }
+  .section-introduction .container .right {
+    width: 50%;
+  }
+
+  .section-introduction .container .left .img {
+    float: right;
+    width: 340px;
+    height: 420px;
+    border: 8px rgb(85, 85, 85) solid;
+  }
+
+  .section-introduction .container .left .img .outer-layer {
+    width: 360px;
+    height: 440px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 5px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .left .img img {
+    position: absolute;
+    border-radius: 5px;
+    width: 360px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .section-introduction .container .right ul li {
+    float: left;
+    padding: 12px 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  li.first {
+    width: 40%;
+  }
+
+  /* -------------------------- 3- Our Services Rules ------------------------- */
+  .section-our-services {
+    padding-top: 40px;
+  }
+  .section-our-services .container {
+    width: 1150px;
+  }
+  .section-our-services .container .mini-service {
+    width: 25%;
+    padding: 40px 0;
+  }
+
+  /* ------------------------- 4- Our Portfolio Rules ------------------------- */
+  div.gallery-photos {
+    width: 1150px;
+  }
+
+  div.gallery-photos .md-right {
+    float: none;
+  }
+
+  div.gallery-photos .img {
+    width: 33.33%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+
+  div.gallery-photos .img .layer {
+    width: 353px;
+    height: 264px;
+    position: absolute;
+    top: 15px;
+  }
+
+  /* ------------------------- 5- Major Counter Rules ------------------------- */
+  .section-major-counter .container {
+    width: 1150px;
+  }
+
+  /* ------------------------ 6- Client Feedback Rules ------------------------ */
+  .section-client-feedback .container {
+    width: 700px;
+  }
+  .section-client-feedback .container::before {
+    top: -160px;
+    left: -90px;
+  }
+
+  .section-client-feedback .left {
+    float: left;
+    margin: 10px 0 0 0;
+    width: 16%;
+  }
+
+  .section-client-feedback .right {
+    float: right;
+    width: 78%;
+  }
+
+  /* ---------------------------- 7- Our Blog Rules --------------------------- */
+  .section-our-blog .container {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .blog .text a {
+    text-decoration: none;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    color: black;
+  
+    transition: 400ms ease-in-out;
+  }
+
+  .blog .img iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .blog .text {
+    padding: 20px;
+  }
+
+  
+}
