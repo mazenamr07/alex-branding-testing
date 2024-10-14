@@ -1,0 +1,365 @@
+/* -------------------------------------------------------------------------- */
+/*                             Small Screens                             */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 578px) {
+  .container {
+    max-width: 550px;
+  }
+
+  /* ------------------------------- Main Header ------------------------------ */
+  .main-header .img-text > span {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  /* ---------------------------------- Chefs --------------------------------- */
+  .chef .img-text p {
+    width: 95%;
+  }
+
+  /* ----------------------------- Contact Details ---------------------------- */
+  .form textarea {
+    height: 7rem;
+  }
+
+  .form form {
+    gap: 15px;
+  }
+
+  form .personal {
+    gap: 15px;
+  }
+
+  .form button {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form input,
+  .form textarea {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  /* --------------------------------- Footer Middle --------------------------------- */
+  footer .middle form {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .middle button {
+    width: 30%;
+    height: fit-content;
+    padding: 10px 0;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Medium Screens                               */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 710px;
+  }
+
+  /* ------------------------------- Main Header ------------------------------ */
+  .main-header .img-text > span {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* ---------------------------------- Chefs --------------------------------- */
+  .chefs .container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .chef {
+    width: calc(710px / 2 - 15px);
+  }
+
+  /* --------------------------------- Gallery -------------------------------- */
+  .gallery .container {
+    flex-direction: row;
+  }
+
+  .gallery-item .layer p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+
+  .gallery-item .layer p.p-last {
+    width: 90%;
+  }
+
+  /* ----------------------------- Contact Details ---------------------------- */
+  .details {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .detail-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .detail-segment {
+    align-items: center;
+    text-align: left;
+
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  /* --------------------------------- Footer --------------------------------- */
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  footer .middle form {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .middle button {
+    width: 20%;
+  }
+
+  .column1 {
+    order: 1;
+    width: 48%;
+
+    margin-right: auto;
+  }
+  .column3 {
+    order: 2;
+    width: 48%;
+    position: relative;
+    top: -22px;
+  }
+  .column2 {
+    order: 3;
+  }
+
+  .column1 .top p {
+    width: 100%;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Large Screens                               */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 993px) {
+  .container {
+    max-width: 950px;
+  }
+
+  /* ------------------------------- Main Header ------------------------------ */
+  .main-header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-header .img-text {
+    width: 40%;
+    text-align: left;
+  }
+  .main-header picture.img {
+    margin: 0;
+    width: 40%;
+    order: 2;
+  }
+  a.book-table {
+    padding: 12px 20px;
+    border-top-left-radius: 0;
+    margin-right: 10px;
+  }
+
+  /* ---------------------------------- Chefs --------------------------------- */
+  .chef {
+    width: calc(625px / 2 - 15px);
+  }
+
+  .chef:nth-of-type(3) .img-text p {
+    width: 96%;
+  }
+
+  /* --------------------------------- Gallery -------------------------------- */
+  .gallery .container {
+    flex-direction: row;
+  }
+
+  .gallery .upper-column {
+    flex-direction: row;
+  }
+
+  .swap .gallery-item:nth-of-type(1) {
+    order: 2;
+  }
+
+  .gallery-item.visible {
+    visibility: visible;
+    position: relative;
+  }
+  .gallery-item.hidden {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  /* ----------------------------- Contact Details ---------------------------- */
+
+  form .personal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .personal input:nth-of-type(1) {
+    width: 50%;
+  }
+
+  .personal input:nth-of-type(2) {
+    width: 50%;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             Extra Large Screens                            */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1125px;
+  }
+
+  /* --------------------------------- Navbar --------------------------------- */
+  nav {
+    padding: 20px 0;
+  }
+
+  nav aside,
+  nav i.fa-bars {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .nav-middle {
+    visibility: visible;
+    position: relative;
+  }
+
+  .nav-middle ul {
+    display: flex;
+    gap: 30px;
+
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .nav-middle ul li {
+    padding: 15px 0;
+    position: relative;
+
+    transition: 300ms ease-in-out;
+  }
+  .nav-middle ul li:after {
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 7px;
+
+    transition: 300ms ease-in-out;
+  }
+  .nav-middle ul li:hover {
+    color: black;
+  }
+  .nav-middle ul li:hover::after {
+    width: 100%;
+  }
+
+  /* ------------------------------- Main Header ------------------------------ */
+  .main-header {
+    display: flex;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-header .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 35px;
+  }
+
+  .main-header .img-text p {
+    padding: 15px 0;
+  }
+
+  a.book-table {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  /* ---------------------------------- Chefs --------------------------------- */
+  .chef {
+    width: calc(740px / 2 - 15px);
+  }
+
+  /* --------------------------------- Footer --------------------------------- */
+  footer .container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .column1 {
+    order: 1;
+    width: 25%;
+
+    margin: 0;
+  }
+
+  .column2 {
+    order: 2;
+    width: 47%;
+  }
+
+  .column3 {
+    order: 3;
+    width: 25%;
+    position: relative;
+    top: 0;
+  }
+
+  .get-in-touch > span {
+    margin: 0;
+  }
+
+  .get-in-touch li {
+    padding: 8px;
+  }
+
+  footer .middle input {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  /* ---------------------------------- Chefs --------------------------------- */
+  .chef {
+    width: calc(850px / 2 - 15px);
+  }
+}
